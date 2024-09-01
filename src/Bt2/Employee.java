@@ -1,6 +1,8 @@
+package Bt2;
+
 import java.util.Scanner;
 
-public class NhanVien {
+public class Employee {
     //Định nghĩa trường
     private String employeeId;
     private String employeeName;
@@ -10,11 +12,11 @@ public class NhanVien {
     private int salary;
 
     //Constructor không tham số
-    public NhanVien() {
+    public Employee() {
     }
 
     //Constructor đầy đủ tham số
-    public NhanVien(String employeeId, String employeeName, int age, boolean gen, int rate, int salary) {
+    public Employee(String employeeId, String employeeName, int age, boolean gen, int rate, int salary) {
         this.employeeId = employeeId;
         this.employeeName = employeeName;
         this.age = age;
@@ -84,6 +86,7 @@ public class NhanVien {
         this.gen = sc.nextBoolean();
         System.out.print("Nhập hệ số lương: ");
         this.rate = sc.nextInt();
+        System.out.println("\n");
     }
 
     //Phương thức hiển thị thông tin

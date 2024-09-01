@@ -1,6 +1,8 @@
-public class NhanVienRun {
+package Bt2;
+
+public class EmployeeRun {
     public static void main(String[] args) {
-        NhanVien nv = new NhanVien();
+        Employee nv = new Employee();
 
         //Nhập thông tin
         nv.inputData();
