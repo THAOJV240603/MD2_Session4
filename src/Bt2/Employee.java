@@ -81,11 +81,11 @@ public class Employee {
         System.out.print("Nhập tên nhân viên: ");
         this.employeeName = sc.nextLine();
         System.out.print("Nhập tuổi: ");
-        this.age = sc.nextInt();
+        this.age = Integer.parseInt(sc.nextLine());
         System.out.print("Nhập giới tính: ");
-        this.gen = sc.nextBoolean();
+        this.gen = Boolean.parseBoolean(sc.nextLine());
         System.out.print("Nhập hệ số lương: ");
-        this.rate = sc.nextInt();
+        this.rate = Integer.parseInt(sc.nextLine());
         System.out.println("\n");
     }
 
@@ -101,7 +101,7 @@ public class Employee {
 
     //Phương thức tính lương
     public void calSalary(){
-        salary = rate * 1300000;
-        System.out.println("Lương: " + salary);
+        this.salary = this.rate * 1300000;
+        System.out.println("Lương: " + this.salary);
     }
 }

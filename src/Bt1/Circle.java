@@ -37,9 +37,9 @@ public class Circle {
     public void inputData(){
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhập bán kính:");
-        this.radius = sc.nextFloat();
+        this.radius = Float.parseFloat(sc.nextLine());
         System.out.println("Nhập màu sắc:");
-        this.color = sc.next();
+        this.color = sc.nextLine();
     }
 
     //Phương thức hiển thị thông tin
@@ -52,14 +52,14 @@ public class Circle {
     //Phương thức trả về chu vi hình tròn
     public void chuvi(){
         float PI = 3.14f;
-        float c = 2 * PI * radius;
+        float c = 2 * PI * this.radius;
         System.out.printf("Chu vi của hình tròn là: %.2f \n", c);
     }
 
     //Phương thức trả về diện tích hình tròn
     public void dientich(){
         float PI = 3.14f;
-        float s = PI * radius * radius;
+        float s = PI * this.radius * this.radius;
         System.out.printf("Diện tích của hình tròn là: %.2f", s);
     }
 }

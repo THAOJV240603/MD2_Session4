@@ -41,18 +41,18 @@ public class QuadraticEquation {
 
     //Phương thức tính Delta
     public double getDiscriminant(){
-        return b*b-4*a*c;
+        return this.b*this.b - 4*this.a*this.c;
     }
 
     //Phương thức trả về nghiệm thứ nhất
     public double getRoot1(){
         if(this.getDiscriminant()<0) return 0;
-        return ((-b+Math.sqrt(this.getDiscriminant()))/(2*a));
+        return ((-this.b+Math.sqrt(this.getDiscriminant()))/(2*this.a));
     }
 
     //Phương thức trả về nghiệm thứ 2
     public double getRoot2(){
         if(this.getDiscriminant()<0) return 0;
-        return ((-b-Math.sqrt(this.getDiscriminant()))/(2*a));
+        return ((-this.b-Math.sqrt(this.getDiscriminant()))/(2*this.a));
     }
 }
