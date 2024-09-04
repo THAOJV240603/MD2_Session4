@@ -93,13 +93,17 @@ public class Student {
     }
 
     //Phương thức hiển thị thông tin của sinh viên
-    public void displayData(){
-        System.out.println("Thông tin của sinh viên:");
-        System.out.println("Mã sinh viên: " + this.studentID);
-        System.out.println("Họ và tên: " + this.studentName);
-        System.out.println("Tuổi: " + this.age);
-        System.out.println("Giới tính: " + (this.gender ? "Nam" : "Nữ"));
-        System.out.println("Địa chỉ: " + this.address);
-        System.out.println("Số điện thoại: " + this.phone);
-    }
+//    public void displayData(){
+//        System.out.println("Thông tin của sinh viên:");
+//        System.out.println("Mã sinh viên: " + this.studentID);
+//        System.out.println("Họ và tên: " + this.studentName);
+//        System.out.println("Tuổi: " + this.age);
+//        System.out.println("Giới tính: " + (this.gender ? "Nam" : "Nữ"));
+//        System.out.println("Địa chỉ: " + this.address);
+//        System.out.println("Số điện thoại: " + this.phone);
+//    }
+      public void displayData(){
+          System.out.printf("%-10s %-20s %-10s %-15s %-20s %-20s\n", this.studentID, this.studentName, this.age, (this.gender ? "Nam" : "Nữ"), this.address, this.phone);
+        }
+
 }
